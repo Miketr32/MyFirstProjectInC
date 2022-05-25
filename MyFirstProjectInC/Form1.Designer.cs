@@ -77,6 +77,15 @@
             this.button18 = new System.Windows.Forms.Button();
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
             this.textBox8 = new System.Windows.Forms.TextBox();
+            this.fontDialog1 = new System.Windows.Forms.FontDialog();
+            this.button19 = new System.Windows.Forms.Button();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.button20 = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.saveFileDialog2 = new System.Windows.Forms.SaveFileDialog();
+            this.button21 = new System.Windows.Forms.Button();
+            this.textBox10 = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -91,6 +100,7 @@
             this.tabPage7.SuspendLayout();
             this.tabPage8.SuspendLayout();
             this.tabPage9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -513,6 +523,12 @@
             // 
             // tabPage9
             // 
+            this.tabPage9.Controls.Add(this.textBox10);
+            this.tabPage9.Controls.Add(this.button21);
+            this.tabPage9.Controls.Add(this.pictureBox2);
+            this.tabPage9.Controls.Add(this.button20);
+            this.tabPage9.Controls.Add(this.textBox9);
+            this.tabPage9.Controls.Add(this.button19);
             this.tabPage9.Controls.Add(this.textBox8);
             this.tabPage9.Controls.Add(this.button18);
             this.tabPage9.Controls.Add(this.button17);
@@ -526,7 +542,7 @@
             // 
             // button17
             // 
-            this.button17.Location = new System.Drawing.Point(71, 138);
+            this.button17.Location = new System.Drawing.Point(32, 44);
             this.button17.Name = "button17";
             this.button17.Size = new System.Drawing.Size(137, 31);
             this.button17.TabIndex = 0;
@@ -536,7 +552,7 @@
             // 
             // button18
             // 
-            this.button18.Location = new System.Drawing.Point(71, 219);
+            this.button18.Location = new System.Drawing.Point(32, 125);
             this.button18.Name = "button18";
             this.button18.Size = new System.Drawing.Size(137, 27);
             this.button18.TabIndex = 1;
@@ -546,12 +562,74 @@
             // 
             // textBox8
             // 
-            this.textBox8.Location = new System.Drawing.Point(229, 223);
+            this.textBox8.Location = new System.Drawing.Point(190, 129);
             this.textBox8.Name = "textBox8";
             this.textBox8.ReadOnly = true;
             this.textBox8.Size = new System.Drawing.Size(200, 20);
             this.textBox8.TabIndex = 2;
             this.textBox8.TextChanged += new System.EventHandler(this.textBox8_TextChanged);
+            // 
+            // button19
+            // 
+            this.button19.Location = new System.Drawing.Point(32, 201);
+            this.button19.Name = "button19";
+            this.button19.Size = new System.Drawing.Size(137, 23);
+            this.button19.TabIndex = 3;
+            this.button19.Text = "Change Font";
+            this.button19.UseVisualStyleBackColor = true;
+            this.button19.Click += new System.EventHandler(this.button19_Click);
+            // 
+            // textBox9
+            // 
+            this.textBox9.Location = new System.Drawing.Point(192, 200);
+            this.textBox9.Multiline = true;
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(197, 48);
+            this.textBox9.TabIndex = 4;
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            this.openFileDialog1.Filter = "Images|*.jpg;*.png|All Files|*.*";
+            // 
+            // button20
+            // 
+            this.button20.Location = new System.Drawing.Point(32, 333);
+            this.button20.Name = "button20";
+            this.button20.Size = new System.Drawing.Size(128, 23);
+            this.button20.TabIndex = 5;
+            this.button20.Text = "Put an Image";
+            this.button20.UseVisualStyleBackColor = true;
+            this.button20.Click += new System.EventHandler(this.button20_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Location = new System.Drawing.Point(192, 279);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(178, 145);
+            this.pictureBox2.TabIndex = 6;
+            this.pictureBox2.TabStop = false;
+            // 
+            // saveFileDialog2
+            // 
+            this.saveFileDialog2.Filter = "Only Text Files|*.txt";
+            // 
+            // button21
+            // 
+            this.button21.Location = new System.Drawing.Point(498, 364);
+            this.button21.Name = "button21";
+            this.button21.Size = new System.Drawing.Size(76, 23);
+            this.button21.TabIndex = 7;
+            this.button21.Text = "Save As";
+            this.button21.UseVisualStyleBackColor = true;
+            this.button21.Click += new System.EventHandler(this.button21_Click);
+            // 
+            // textBox10
+            // 
+            this.textBox10.Location = new System.Drawing.Point(425, 321);
+            this.textBox10.Name = "textBox10";
+            this.textBox10.Size = new System.Drawing.Size(219, 20);
+            this.textBox10.TabIndex = 8;
             // 
             // Form1
             // 
@@ -586,6 +664,7 @@
             this.tabPage8.PerformLayout();
             this.tabPage9.ResumeLayout(false);
             this.tabPage9.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -639,6 +718,15 @@
         private System.Windows.Forms.Button button18;
         private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
         private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.Button button19;
+        private System.Windows.Forms.FontDialog fontDialog1;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Button button20;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.Button button21;
+        private System.Windows.Forms.SaveFileDialog saveFileDialog2;
     }
 }
 

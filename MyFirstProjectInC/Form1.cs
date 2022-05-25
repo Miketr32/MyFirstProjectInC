@@ -194,5 +194,26 @@ namespace MyFirstProjectInC
         {
 
         }
+
+        private void button19_Click(object sender, EventArgs e)
+        {
+            this.fontDialog1.ShowDialog();
+            this.textBox9.Font = this.fontDialog1.Font;
+            
+        }
+
+        private void button20_Click(object sender, EventArgs e)
+        {
+            this.openFileDialog1.ShowDialog();
+            String imagen = this.openFileDialog1.FileName;
+            this.pictureBox2.Image = Image.FromFile(imagen);
+        }
+
+        private void button21_Click(object sender, EventArgs e)
+        {
+            this.saveFileDialog2.ShowDialog();
+            String location = this.saveFileDialog2.FileName;
+            this.textBox10.Text = location;
+        }
     }
 }
