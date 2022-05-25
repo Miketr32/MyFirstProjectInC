@@ -177,5 +177,22 @@ namespace MyFirstProjectInC
         {
             //Dejare esto en pausa hasta aprender una forma mas pro de desarrollar esto =)
         }
+
+        private void button17_Click(object sender, EventArgs e)
+        {
+            this.colorDialog1.ShowDialog();
+            this.tabPage9.BackColor = this.colorDialog1.Color;
+        }
+
+        private void button18_Click(object sender, EventArgs e)
+        {
+            this.folderBrowserDialog1.ShowDialog();
+            this.textBox8.Text = this.folderBrowserDialog1.SelectedPath;
+        }
+
+        private void textBox8_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
